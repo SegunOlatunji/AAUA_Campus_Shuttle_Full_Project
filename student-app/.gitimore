@@ -1,3 +1,14 @@
-node_modules
-.expo
-dist
+**/node_modules/
+node_modules/
+
+.env
+.env.*
+!.env.example
+
+dist/
+build/
+.expo/
+coverage/
+
+.DS_Store
+Thumbs.db
