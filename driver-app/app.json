@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "AAUA Shuttle Driver",
+    "slug": "aaua-campus-shuttle-driver",
+    "scheme": "aauashuttledriver",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "AAUA Shuttle Driver uses your location to show your live position to students while a trip is active."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "ng.edu.aaua.shuttle.driver"
+    },
+    "android": {
+      "package": "ng.edu.aaua.shuttle.driver",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a2be5f89-1796-4f49-9514-96f641dd7373"
+      }
+    }
+  }
+}
